@@ -1,0 +1,11 @@
+<p> Assginment for Built in Attributes Directive</p>
+
+<!--<button (click)="fruittype=!fruittype"> Display Detials </button>-->
+
+<button (click)="onfruittype()"> Display Detials </button>
+<p *ngIf="fruittype"> Fruits Type= Apple</p>
+<div *ngFor="let logItem of log"
+     [ngStyle]="{backgroundColor:logItem >=5 ? 'blue' : 'cyan'}"
+     [ngClass]="{'white-text':logItem >=5}"
+     >{{logItem}}</div>
+
